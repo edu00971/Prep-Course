@@ -200,13 +200,19 @@ function esVerdadero(valor){
 }
 
 
+function verdader(valor) {
+  if (valor=== true) {
+    return 'soy verdadero';
+  }
+  return 'soy falso';
 }
+
 
 function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí
-  et arrayTablaDel6 = []
+  let arrayTablaDel6 = []
   for (let i = 0; i < 11; i++) {
         arrayTablaDel6.push(6 * i)
   }
@@ -224,8 +230,16 @@ function tieneTresDigitos(numero){
   }
   return false
 }
-  
+
+
+function tienecuatrodigitos(numero) {
+  if (numero > 1000 && numero < 10000) {
+    return true;
+  }
+  return false;
 }
+
+
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
@@ -240,8 +254,6 @@ function doWhile(numero) {
   while(i < 8);
   return a;
 }
-}
-kk
 
 
 // No modificar nada debajo de esta línea
